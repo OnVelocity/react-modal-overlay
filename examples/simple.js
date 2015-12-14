@@ -106,12 +106,13 @@ webpackJsonp([0,1],[
 		return _react2['default'].createElement(
 			'div',
 			_extends({ className: (0, _classnames2['default'])("ov-react-modal-overlay", className) }, otherProps),
-			'ModalOverlay component'
+			_react2['default'].createElement('div', { className: 'ov-react-modal-overlay-background' }),
+			_react2['default'].createElement(
+				'div',
+				{ className: 'ov-react-modal-overlay-foreground' },
+				'This is the ModalOverlay component!'
+			)
 		);
-	};
-	
-	ModalOverlay.componentWillMount = function () {
-		return console.log('mounted', undefined);
 	};
 	
 	exports['default'] = ModalOverlay;
