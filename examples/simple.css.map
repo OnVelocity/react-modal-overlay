@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///assets/index.less"],"names":[],"mappings":"AAAA;EACE;CACD","file":"simple.css","sourcesContent":[".ov-react-modal-overlay {\n  background-color: red;\n}\n\n\n/** WEBPACK FOOTER **\n ** assets/index.less\n **/"],"sourceRoot":""}
