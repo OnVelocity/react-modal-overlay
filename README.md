@@ -78,6 +78,12 @@ ReactDOM.render(<ModalOverlay />, container);
           <td></td>
           <td>additional css class of root dom node</td>
         </tr>
+        <tr>
+          <td>onClick</td>
+          <td>func</td>
+          <td></td>
+          <td>callback when click on modal overlay detected</td>
+        </tr>
     </tbody>
 </table>
 
@@ -104,4 +110,3 @@ http://localhost:8000/node_modules/rc-server/node_modules/node-jscover/lib/front
 
 ov-react-modal-overlay is released under the MIT license.
 
->>>>>>> init

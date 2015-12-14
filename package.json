@@ -1,55 +1,56 @@
 {
-	"name": "ov-react-modal-overlay",
-	"version": "0.0.1",
-	"description": "modal-overlay ui component for react",
-	"keywords": [
-		"react",
-		"react-component",
-		"react-modal-overlay",
-		"modal-overlay"
-	],
-	"homepage": "https://github.com/OnVelocity/react-modal-overlay",
-	"author": "",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/OnVelocity/react-modal-overlay.git"
-	},
-	"bugs": {
-		"url": "https://github.com/OnVelocity/react-modal-overlay/issues"
-	},
-	"files": [
-		"lib",
-		"assets/*.css"
-	],
-	"license": "MIT",
-	"main": "./lib/index",
-	"config": {
-		"port": 8000
-	},
-	"scripts": {
-		"compile": "rc-tools run compile",
-		"build": "rc-tools run build",
-		"gh-pages": "rc-tools run gh-pages",
-		"start": "rc-server",
-		"pub": "rc-tools run pub",
-		"lint": "rc-tools run lint",
-		"karma": "rc-tools run karma",
-		"browser-test": "rc-tools run browser-test",
-		"browser-test-cover": "rc-tools run browser-test-cover"
-	},
-	"devDependencies": {
-		"expect.js": "0.3.x",
-		"pre-commit": "1.x",
-		"rc-server": "3.x",
-		"rc-tools": "4.x",
-		"react": "0.14.x",
-		"react-addons-test-utils": "0.14.x",
-		"react-dom": "0.14.x"
-	},
-	"pre-commit": [
-		"lint"
-	],
-	"dependencies": {
-		"classnames": "^2.2.1"
-	}
+  "name": "ov-react-modal-overlay",
+  "version": "0.0.1",
+  "description": "modal-overlay ui component for react",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-modal-overlay",
+    "modal-overlay"
+  ],
+  "homepage": "https://github.com/OnVelocity/react-modal-overlay",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OnVelocity/react-modal-overlay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OnVelocity/react-modal-overlay/issues"
+  },
+  "files": [
+    "lib",
+    "assets/*.css"
+  ],
+  "license": "MIT",
+  "main": "./lib/index",
+  "config": {
+    "port": 8000
+  },
+  "scripts": {
+    "compile": "rc-tools run compile",
+    "build": "rc-tools run build",
+    "gh-pages": "rc-tools run gh-pages",
+    "start": "rc-server",
+    "pub": "rc-tools run pub",
+    "lint": "rc-tools run lint",
+    "karma": "rc-tools run karma",
+    "browser-test": "rc-tools run browser-test",
+    "browser-test-cover": "rc-tools run browser-test-cover"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^2.0.0",
+    "eslint-config-standard": "^4.4.0",
+    "eslint-plugin-react": "^3.11.3",
+    "eslint-plugin-standard": "^1.3.1",
+    "expect.js": "0.3.x",
+    "pre-commit": "1.x",
+    "rc-server": "3.x",
+    "rc-tools": "4.x",
+    "react": "0.14.x",
+    "react-addons-test-utils": "0.14.x",
+    "react-dom": "0.14.x"
+  },
+  "dependencies": {
+    "classnames": "^2.2.1"
+  }
 }
