@@ -1,7 +1,7 @@
 /*eslint-disable no-alert, no-console */
 // use jsx to render html, do not modify simple.html
 
-//import React from 'react'
+import React from 'react' //eslint-disable-line
 import ReactDOM from 'react-dom'
 import 'ov-react-modal-overlay/assets/index.less'
 import ModalOverlay from 'ov-react-modal-overlay'
