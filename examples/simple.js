@@ -26,15 +26,19 @@ webpackJsonp([0,1],[
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	__webpack_require__(160);
+	//import 'ov-react-modal-overlay/assets/index.less'
 	
-	var _ovReactModalOverlay = __webpack_require__(161);
+	var _ovReactModalOverlay = __webpack_require__(160);
 	
 	var _ovReactModalOverlay2 = _interopRequireDefault(_ovReactModalOverlay);
 	
-	_reactDom2['default'].render(_react2['default'].createElement(_ovReactModalOverlay2['default'], { onClick: function (event) {
-	    return console.log(event);
-	  } }), document.getElementById('__react-content'));
+	_reactDom2['default'].render(_react2['default'].createElement(
+	  _ovReactModalOverlay2['default'],
+	  { onClick: function (event) {
+	      return console.log(event);
+	    } },
+	  'This is the ModalOverlay component!'
+	), document.getElementById('__react-content'));
 
 /***/ },
 /* 2 */
@@ -19625,9 +19629,23 @@ webpackJsonp([0,1],[
 
 /***/ },
 /* 160 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
+	// export this package's api
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	var _src = __webpack_require__(161);
+	
+	var _src2 = _interopRequireDefault(_src);
+
+	exports['default'] = _src2['default'];
+	module.exports = exports['default'];
 
 /***/ },
 /* 161 */
@@ -19642,27 +19660,7 @@ webpackJsonp([0,1],[
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _src = __webpack_require__(162);
-	
-	var _src2 = _interopRequireDefault(_src);
-
-	exports['default'] = _src2['default'];
-	module.exports = exports['default'];
-
-/***/ },
-/* 162 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// export this package's api
-	'use strict';
-	
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	var _ModalOverlay = __webpack_require__(163);
+	var _ModalOverlay = __webpack_require__(162);
 	
 	var _ModalOverlay2 = _interopRequireDefault(_ModalOverlay);
 
@@ -19670,7 +19668,7 @@ webpackJsonp([0,1],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 163 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19687,9 +19685,11 @@ webpackJsonp([0,1],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _classnames = __webpack_require__(164);
+	var _classnames = __webpack_require__(163);
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
+	
+	__webpack_require__(164);
 	
 	var ModalOverlay = function ModalOverlay(props) {
 		var className = props.className;
@@ -19702,7 +19702,7 @@ webpackJsonp([0,1],[
 			_react2['default'].createElement(
 				'div',
 				{ className: 'ov-react-modal-overlay-foreground' },
-				'This is the ModalOverlay component!'
+				props.children
 			)
 		);
 	};
@@ -19715,7 +19715,7 @@ webpackJsonp([0,1],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 164 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -19767,6 +19767,12 @@ webpackJsonp([0,1],[
 		}
 	}());
 
+
+/***/ },
+/* 164 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 ]);
